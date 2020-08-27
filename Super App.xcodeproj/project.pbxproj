@@ -230,9 +230,9 @@
 		98E0247524EC5383009B9046 = {
 			isa = PBXGroup;
 			children = (
-				9818627724F731E000B66962 /* Core.xcodeproj */,
 				98D83AF724EC59F0004D9512 /* CoreLogin.xcodeproj */,
 				98BDC5FD24EC596200CD33B4 /* Login.xcodeproj */,
+				9818627724F731E000B66962 /* Core.xcodeproj */,
 				98E0248024EC5383009B9046 /* Super App */,
 				98E0249724EC5385009B9046 /* Super AppTests */,
 				98E024A224EC5385009B9046 /* Super AppUITests */,

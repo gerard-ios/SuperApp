@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Core
 
 protocol AuthenticateViewDelegate: AnyObject
 {
@@ -18,6 +19,17 @@ class AuthenticateView: UIView
 {
 
     weak var delegate: AuthenticateViewDelegate?
+    
+    override init(frame: CGRect = .zero)
+    {
+        super.init(frame: frame)
+        setupConfiguration()
+    }
+    
+    required init?(coder: NSCoder)
+    {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     private lazy var mainStackView: UIStackView =
     {
@@ -49,6 +61,17 @@ class AuthenticateView: UIView
         delegate?.loginWithState()
     }
     
+
+}
+
+extension AuthenticateView: BaseViewConfiguration
+{
+    
+    func configureView()
+    {
+        print("configureView")
+    }
+    
     func buildViewHierarchy()
     {
         self.addSubview(mainStackView)
@@ -56,7 +79,8 @@ class AuthenticateView: UIView
         mainStackView.addArrangedSubview(loginButton)
         
     }
-    func setupConstraint()
+    
+    func setupConstraints()
     {
         self.loginButton.setupConstraint { (view) -> [NSLayoutConstraint] in
             [

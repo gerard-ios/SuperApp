@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9818628824F7325F00B66962 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9818628724F7325F00B66962 /* Coordinator.swift */; };
 		9818628B24F732F100B66962 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9818628A24F732F100B66962 /* Event.swift */; };
+		9818628E24F738EE00B66962 /* BaseViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9818628D24F738EE00B66962 /* BaseViewConfiguration.swift */; };
 		98E0B56524F731C4004BEC6F /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E0B55B24F731C4004BEC6F /* Core.framework */; };
 		98E0B56A24F731C4004BEC6F /* CoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E0B56924F731C4004BEC6F /* CoreTests.swift */; };
 		98E0B56C24F731C4004BEC6F /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 98E0B55E24F731C4004BEC6F /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		9818628724F7325F00B66962 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		9818628A24F732F100B66962 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		9818628D24F738EE00B66962 /* BaseViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewConfiguration.swift; sourceTree = "<group>"; };
 		98E0B55B24F731C4004BEC6F /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E0B55E24F731C4004BEC6F /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		98E0B55F24F731C4004BEC6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,6 +72,14 @@
 			path = EventBus;
 			sourceTree = "<group>";
 		};
+		9818628C24F738BB00B66962 /* ViewConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				9818628D24F738EE00B66962 /* BaseViewConfiguration.swift */,
+			);
+			path = ViewConfiguration;
+			sourceTree = "<group>";
+		};
 		98E0B55124F731C4004BEC6F = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +101,7 @@
 		98E0B55D24F731C4004BEC6F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				9818628C24F738BB00B66962 /* ViewConfiguration */,
 				9818628924F732DD00B66962 /* EventBus */,
 				9818628624F7324E00B66962 /* Coordinator */,
 				98E0B55E24F731C4004BEC6F /* Core.h */,
@@ -220,6 +231,7 @@
 			files = (
 				9818628B24F732F100B66962 /* Event.swift in Sources */,
 				9818628824F7325F00B66962 /* Coordinator.swift in Sources */,
+				9818628E24F738EE00B66962 /* BaseViewConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
