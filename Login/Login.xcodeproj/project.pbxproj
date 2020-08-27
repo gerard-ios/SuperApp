@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		981FABB024F5A10A00D2DE82 /* LoginViewTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981FABAF24F5A10A00D2DE82 /* LoginViewTheme.swift */; };
+		981FABBD24F5AA5C00D2DE82 /* AuthenticateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981FABBC24F5AA5C00D2DE82 /* AuthenticateView.swift */; };
+		984ABCE424EF236A00581BFB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984ABCE324EF236A00581BFB /* LoginView.swift */; };
+		989A1F1F24EE05680042A306 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989A1F1E24EE05680042A306 /* LoginViewController.swift */; };
+		989A1F2224EE0A800042A306 /* LoginEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989A1F2124EE0A800042A306 /* LoginEvents.swift */; };
 		989E25FB24EC56DE000B7586 /* Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989E25F124EC56DD000B7586 /* Login.framework */; };
 		989E260024EC56DE000B7586 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989E25FF24EC56DE000B7586 /* LoginTests.swift */; };
 		989E260224EC56DE000B7586 /* Login.h in Headers */ = {isa = PBXBuildFile; fileRef = 989E25F424EC56DD000B7586 /* Login.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98D83B2024EC98A5004D9512 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D83B1F24EC98A5004D9512 /* LoginCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +29,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		981FABAF24F5A10A00D2DE82 /* LoginViewTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewTheme.swift; sourceTree = "<group>"; };
+		981FABBC24F5AA5C00D2DE82 /* AuthenticateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateView.swift; sourceTree = "<group>"; };
+		984ABCE324EF236A00581BFB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		989A1F1E24EE05680042A306 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		989A1F2124EE0A800042A306 /* LoginEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEvents.swift; sourceTree = "<group>"; };
 		989E25F124EC56DD000B7586 /* Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		989E25F424EC56DD000B7586 /* Login.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
 		989E25F524EC56DD000B7586 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		989E25FA24EC56DE000B7586 /* LoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		989E25FF24EC56DE000B7586 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
 		989E260124EC56DE000B7586 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98D83B1F24EC98A5004D9512 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +62,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		984ABCE224EF234B00581BFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				984ABCE324EF236A00581BFB /* LoginView.swift */,
+				981FABAF24F5A10A00D2DE82 /* LoginViewTheme.swift */,
+				981FABBC24F5AA5C00D2DE82 /* AuthenticateView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		989A1F1D24EE05500042A306 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				989A1F1E24EE05680042A306 /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		989A1F2024EE0A630042A306 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				989A1F2124EE0A800042A306 /* LoginEvents.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
 		989E25E724EC56DD000B7586 = {
 			isa = PBXGroup;
 			children = (
@@ -71,8 +109,12 @@
 		989E25F324EC56DD000B7586 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				984ABCE224EF234B00581BFB /* View */,
+				989A1F2024EE0A630042A306 /* Events */,
+				989A1F1D24EE05500042A306 /* Controller */,
 				989E25F424EC56DD000B7586 /* Login.h */,
 				989E25F524EC56DD000B7586 /* Info.plist */,
+				98D83B1F24EC98A5004D9512 /* LoginCoordinator.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -148,6 +190,7 @@
 				TargetAttributes = {
 					989E25F024EC56DD000B7586 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 					989E25F924EC56DE000B7586 = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -195,6 +238,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98D83B2024EC98A5004D9512 /* LoginCoordinator.swift in Sources */,
+				989A1F1F24EE05680042A306 /* LoginViewController.swift in Sources */,
+				984ABCE424EF236A00581BFB /* LoginView.swift in Sources */,
+				989A1F2224EE0A800042A306 /* LoginEvents.swift in Sources */,
+				981FABB024F5A10A00D2DE82 /* LoginViewTheme.swift in Sources */,
+				981FABBD24F5AA5C00D2DE82 /* AuthenticateView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +317,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -325,7 +374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -340,6 +389,7 @@
 		989E260624EC56DE000B7586 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = W2H45976L3;
@@ -356,6 +406,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.AdolfoMontilla.Login;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +415,7 @@
 		989E260724EC56DE000B7586 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = W2H45976L3;
@@ -388,6 +440,7 @@
 		989E260924EC56DE000B7586 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W2H45976L3;
 				INFOPLIST_FILE = LoginTests/Info.plist;
@@ -406,6 +459,7 @@
 		989E260A24EC56DE000B7586 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W2H45976L3;
 				INFOPLIST_FILE = LoginTests/Info.plist;
