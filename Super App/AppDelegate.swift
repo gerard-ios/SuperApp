@@ -20,10 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let window = UIWindow(frame: UIScreen.main.bounds)
         
-        //window.rootViewController = UIViewController()
-        
-        //window.makeKeyAndVisible()
-        
         window.backgroundColor = .red
         
         self.window = window

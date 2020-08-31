@@ -13,6 +13,7 @@ import Core
 class LoginView: UIView
 {
     let theme: LoginViewTheme
+    
     weak var delegate: AuthenticateViewDelegate?
     {
         didSet
@@ -21,7 +22,35 @@ class LoginView: UIView
         }
     }
     
-    private(set) lazy var accountView = AuthenticateView()
+//    private(set) lazy var loginButton: UIButton =
+//    {
+//        //let view = UIButton(frame: .zero)
+//        let view = UIButton(frame: CGRect(x: 20, y: 20, width: 200, height: 60))
+//        view.setTitle("loginButton", for: .normal)
+//        view.backgroundColor = .blue
+//        view.isEnabled = true
+//        view.addTarget(self, action: #selector(AuthenticateView.loginButtonTapped), for: .touchUpInside)
+//
+//        return view
+//    }()
+//
+//    @objc
+//    func loginButtonTapped()
+//    {
+//        debugPrint("Click")
+//        //delegate?.loginWithState()
+//    }
+    
+    private(set) lazy var accountView: AuthenticateView =
+    {
+        
+        let style = AuthenticateView.Style(mainColor: UIColor.black)
+        
+        let view = AuthenticateView(style: style, frame: .zero)
+        
+        return view
+        
+    }()
     
     private lazy var accountViewVerticalCenter: NSLayoutConstraint = .verticalCenter(firstView: self.accountView, secondView: self)
     
@@ -41,15 +70,11 @@ class LoginView: UIView
 
 extension LoginView: BaseViewConfiguration
 {
-
-//    func setupConstraints() {
-//        print("setupConstraints")
-//    }
-    
-    func configureView() {
+    func configureView()
+    {
         print("configureView")
     }
-    
+
     func setupConstraints()
     {
         accountView.setupConstraint { view -> [NSLayoutConstraint] in
@@ -67,16 +92,25 @@ extension LoginView: BaseViewConfiguration
                 .horizontalCenter(firstView: view, secondView: self),
                 .width(view: view, constant: accountViewWidth),
                 accountViewHeightConstraint
-
             ]
-
         }
-
     }
     
     func buildViewHierarchy()
     {
-        //self.addSubViews([accountView])
-        self.addSubview(accountView)
+        self.addSubViews([accountView])
+        //self.addSubview(accountView)
+    }
+}
+
+public extension UIView
+{
+    func addSubViews(_ views: [UIView])
+    {
+        views.forEach
+        {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            self.addSubview($0)
+        }
     }
 }

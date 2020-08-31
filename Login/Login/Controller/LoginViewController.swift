@@ -12,7 +12,7 @@ import UIKit
 class LoginViewController: UIViewController
 {
     private let theme: LoginViewTheme
-    private var mainView: LoginView?
+    private(set) var mainView: LoginView
     
 //    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
 //    {
@@ -36,9 +36,19 @@ class LoginViewController: UIViewController
     
     override func loadView()
     {
-        self.view = self.mainView
+        self.view = mainView
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        mainView.delegate = self
+        
+        print("viewDidLoad: \(String(describing: self.view))")
+        print("viewDidLoad: \(String(describing: self.mainView))")
+        
+        print("viewDidLoad: \(String(describing: self.mainView.accountView.frame))")
+    }
     
 }
 
@@ -48,6 +58,4 @@ extension LoginViewController: AuthenticateViewDelegate
     {
         print("Click")
     }
-    
-    
 }
