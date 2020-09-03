@@ -10,6 +10,8 @@
 		981FABB024F5A10A00D2DE82 /* LoginViewTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981FABAF24F5A10A00D2DE82 /* LoginViewTheme.swift */; };
 		981FABBD24F5AA5C00D2DE82 /* AuthenticateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981FABBC24F5AA5C00D2DE82 /* AuthenticateView.swift */; };
 		984ABCE424EF236A00581BFB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984ABCE324EF236A00581BFB /* LoginView.swift */; };
+		98945F6E24FFD8E4009CB2C8 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98945F6D24FFD8E4009CB2C8 /* Core.framework */; };
+		98945F6F24FFD8E4009CB2C8 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 98945F6D24FFD8E4009CB2C8 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		989A1F1F24EE05680042A306 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989A1F1E24EE05680042A306 /* LoginViewController.swift */; };
 		989A1F2224EE0A800042A306 /* LoginEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989A1F2124EE0A800042A306 /* LoginEvents.swift */; };
 		989E25FB24EC56DE000B7586 /* Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989E25F124EC56DD000B7586 /* Login.framework */; };
@@ -28,10 +30,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		98945F7024FFD8E4009CB2C8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				98945F6F24FFD8E4009CB2C8 /* Core.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		981FABAF24F5A10A00D2DE82 /* LoginViewTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewTheme.swift; sourceTree = "<group>"; };
 		981FABBC24F5AA5C00D2DE82 /* AuthenticateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateView.swift; sourceTree = "<group>"; };
 		984ABCE324EF236A00581BFB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		98945F6D24FFD8E4009CB2C8 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		989A1F1E24EE05680042A306 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		989A1F2124EE0A800042A306 /* LoginEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEvents.swift; sourceTree = "<group>"; };
 		989E25F124EC56DD000B7586 /* Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98945F6E24FFD8E4009CB2C8 /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +90,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		98945F6C24FFD8E4009CB2C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98945F6D24FFD8E4009CB2C8 /* Core.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		989A1F1D24EE05500042A306 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +120,7 @@
 				989E25F324EC56DD000B7586 /* Login */,
 				989E25FE24EC56DE000B7586 /* LoginTests */,
 				989E25F224EC56DD000B7586 /* Products */,
+				98945F6C24FFD8E4009CB2C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,6 +177,7 @@
 				989E25ED24EC56DD000B7586 /* Sources */,
 				989E25EE24EC56DD000B7586 /* Frameworks */,
 				989E25EF24EC56DD000B7586 /* Resources */,
+				98945F7024FFD8E4009CB2C8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -406,9 +434,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.AdolfoMontilla.Login;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -432,8 +461,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.AdolfoMontilla.Login;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

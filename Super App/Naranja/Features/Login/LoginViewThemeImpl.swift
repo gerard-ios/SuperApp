@@ -13,6 +13,4 @@ import UIKit
 struct LoginViewThemeImpl: LoginViewTheme
 {
     var loginButtonTitleColor: UIColor = .orange
-    
-    
 }

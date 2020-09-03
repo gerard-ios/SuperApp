@@ -95,7 +95,7 @@ class AuthenticateView: UIView
     {
         //let view = UIButton(frame: .zero)
         let view = UIButton(frame: CGRect(x: 20, y: 20, width: 200, height: 60))
-        view.setTitle("loginButtonTest", for: .normal)
+        view.setTitle("Show ItauPass", for: .normal)
         view.backgroundColor = .blue
         view.isEnabled = true
         view.addTarget(self, action: #selector(loginButtonTappedTest), for: .touchUpInside)
@@ -106,8 +106,7 @@ class AuthenticateView: UIView
     @objc
     func loginButtonTapped()
     {
-        debugPrint("Click")
-        //delegate?.loginWithState()
+        delegate?.loginWithState()
     }
     
     @objc
@@ -118,8 +117,6 @@ class AuthenticateView: UIView
     }
     
 }
-
-
 
 extension AuthenticateView: BaseViewConfiguration
 {

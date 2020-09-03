@@ -23,10 +23,8 @@ public final class LoginCoordinator: LoginCoordinated
     
     public func handle(event: InternalLoginEvent) {
         switch event {
-        case .Biometric:
-            print("1")
-        default:
-            print("Another")
+        case .showItauPass:
+            showItauPass()
         
         }
     }
@@ -41,7 +39,10 @@ public final class LoginCoordinator: LoginCoordinated
         self.theme = theme
     }
     
-    
+    public func showItauPass()
+    {
+        try? EventBus.shared.emit(event: LoginEvent.itauPass)
+    }
 }
 
 extension LoginCoordinator: Coordinator
@@ -57,7 +58,7 @@ extension LoginCoordinator: Coordinator
     
     private func composeLoginViewController() -> LoginViewController
     {
-        let viewController = LoginViewController(withTheme: theme)
+        let viewController = LoginViewController(coordinator: self, withTheme: theme)
 
         return viewController
     }

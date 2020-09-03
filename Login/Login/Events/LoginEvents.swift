@@ -11,19 +11,19 @@ import Core
 
 public enum LoginEvent: Event
 {
-    case didLogin
+    //case didLogin
     case itauPass
-    case passwordRecovery
+    //case passwordRecovery
 }
 
 public enum InternalLoginEvent: Event
 {
-    case showRecoveryPass
-    case didLogin
-    case showBenefits
-    case showHelp
+//    case showRecoveryPass
+//    case didLogin
+//    case showBenefits
+//    case showHelp
     case showItauPass
-    case Biometric
-    case firstAcces
-    case ChangeUserInformation
+//    case Biometric
+//    case firstAcces
+//    case ChangeUserInformation
 }

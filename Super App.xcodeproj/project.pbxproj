@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9818628424F7324500B66962 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9818627D24F731E000B66962 /* Core.framework */; };
-		9818628524F7324500B66962 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9818627D24F731E000B66962 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		981FABBB24F5A19B00D2DE82 /* LoginViewThemeImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981FABBA24F5A19B00D2DE82 /* LoginViewThemeImpl.swift */; };
+		98AAF74724FD638D00822E42 /* ItauPass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98AAF73F24FD626A00822E42 /* ItauPass.framework */; };
+		98AAF74824FD638D00822E42 /* ItauPass.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 98AAF73F24FD626A00822E42 /* ItauPass.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		98BC14FD24FD5550006BFCA6 /* ItauPassCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BC14FC24FD5550006BFCA6 /* ItauPassCoordinator.swift */; };
+		98BC14FE24FD5550006BFCA6 /* ItauPassCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BC14FC24FD5550006BFCA6 /* ItauPassCoordinator.swift */; };
+		98BC14FF24FD5550006BFCA6 /* ItauPassCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BC14FC24FD5550006BFCA6 /* ItauPassCoordinator.swift */; };
 		98D83B0F24EC5E48004D9512 /* Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98BDC60324EC596200CD33B4 /* Login.framework */; };
 		98D83B1024EC5E48004D9512 /* Login.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 98BDC60324EC596200CD33B4 /* Login.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		98D83B1124EC5E52004D9512 /* CoreLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D83AFD24EC59F0004D9512 /* CoreLogin.framework */; };
@@ -27,22 +30,38 @@
 		98E0248B24EC5384009B9046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98E0248A24EC5384009B9046 /* Assets.xcassets */; };
 		98E0249924EC5385009B9046 /* Super_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E0249824EC5385009B9046 /* Super_AppTests.swift */; };
 		98E024A424EC5385009B9046 /* Super_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E024A324EC5385009B9046 /* Super_AppUITests.swift */; };
+		98F2E94624FDD6A90048DD05 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980E3EC324FDD55200752731 /* Core.framework */; };
+		98F2E94724FDD6A90048DD05 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 980E3EC324FDD55200752731 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9818627C24F731E000B66962 /* PBXContainerItemProxy */ = {
+		980E3EC224FDD55200752731 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9818627724F731E000B66962 /* Core.xcodeproj */;
+			containerPortal = 980E3EBD24FDD55200752731 /* Core.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 98E0B55B24F731C4004BEC6F;
 			remoteInfo = Core;
 		};
-		9818627E24F731E000B66962 /* PBXContainerItemProxy */ = {
+		980E3EC424FDD55200752731 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9818627724F731E000B66962 /* Core.xcodeproj */;
+			containerPortal = 980E3EBD24FDD55200752731 /* Core.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 98E0B56424F731C4004BEC6F;
 			remoteInfo = CoreTests;
+		};
+		98AAF73E24FD626A00822E42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98AAF73924FD626A00822E42 /* ItauPass.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9881F5A724FD6165008DAC65;
+			remoteInfo = ItauPass;
+		};
+		98AAF74024FD626A00822E42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98AAF73924FD626A00822E42 /* ItauPass.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9881F5B024FD6166008DAC65;
+			remoteInfo = ItauPassTests;
 		};
 		98BDC60224EC596200CD33B4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -95,9 +114,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				98AAF74824FD638D00822E42 /* ItauPass.framework in Embed Frameworks */,
 				98D83B1024EC5E48004D9512 /* Login.framework in Embed Frameworks */,
-				9818628524F7324500B66962 /* Core.framework in Embed Frameworks */,
 				98D83B1224EC5E52004D9512 /* CoreLogin.framework in Embed Frameworks */,
+				98F2E94724FDD6A90048DD05 /* Core.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,8 +125,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9818627724F731E000B66962 /* Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Core.xcodeproj; path = Core/Core.xcodeproj; sourceTree = "<group>"; };
+		980E3EBD24FDD55200752731 /* Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Core.xcodeproj; path = Core/Core.xcodeproj; sourceTree = "<group>"; };
 		981FABBA24F5A19B00D2DE82 /* LoginViewThemeImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewThemeImpl.swift; sourceTree = "<group>"; };
+		98AAF73924FD626A00822E42 /* ItauPass.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ItauPass.xcodeproj; path = ItauPass/ItauPass.xcodeproj; sourceTree = "<group>"; };
+		98BC14FC24FD5550006BFCA6 /* ItauPassCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItauPassCoordinator.swift; sourceTree = "<group>"; };
 		98BDC5FD24EC596200CD33B4 /* Login.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Login.xcodeproj; path = Login/Login.xcodeproj; sourceTree = "<group>"; };
 		98D83AF724EC59F0004D9512 /* CoreLogin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CoreLogin.xcodeproj; path = CoreLogin/CoreLogin.xcodeproj; sourceTree = "<group>"; };
 		98D83B1324EC7B24004D9512 /* AppCoodinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoodinator.swift; sourceTree = "<group>"; };
@@ -129,9 +151,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98AAF74724FD638D00822E42 /* ItauPass.framework in Frameworks */,
 				98D83B0F24EC5E48004D9512 /* Login.framework in Frameworks */,
-				9818628424F7324500B66962 /* Core.framework in Frameworks */,
 				98D83B1124EC5E52004D9512 /* CoreLogin.framework in Frameworks */,
+				98F2E94624FDD6A90048DD05 /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,11 +175,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9818627824F731E000B66962 /* Products */ = {
+		980E3EBE24FDD55200752731 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9818627D24F731E000B66962 /* Core.framework */,
-				9818627F24F731E000B66962 /* CoreTests.xctest */,
+				980E3EC324FDD55200752731 /* Core.framework */,
+				980E3EC524FDD55200752731 /* CoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,6 +206,23 @@
 				981FABBA24F5A19B00D2DE82 /* LoginViewThemeImpl.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		98AAF73A24FD626A00822E42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98AAF73F24FD626A00822E42 /* ItauPass.framework */,
+				98AAF74124FD626A00822E42 /* ItauPassTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98BC14FB24FD553A006BFCA6 /* itauPass */ = {
+			isa = PBXGroup;
+			children = (
+				98BC14FC24FD5550006BFCA6 /* ItauPassCoordinator.swift */,
+			);
+			path = itauPass;
 			sourceTree = "<group>";
 		};
 		98BDC5FE24EC596200CD33B4 /* Products */ = {
@@ -213,6 +253,7 @@
 		98D83B1924EC971B004D9512 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				98BC14FB24FD553A006BFCA6 /* itauPass */,
 				98D83B1A24EC9728004D9512 /* Login */,
 				98D83B2124EDD6BC004D9512 /* RootContainerViewController.swift */,
 			);
@@ -230,9 +271,10 @@
 		98E0247524EC5383009B9046 = {
 			isa = PBXGroup;
 			children = (
+				98AAF73924FD626A00822E42 /* ItauPass.xcodeproj */,
 				98D83AF724EC59F0004D9512 /* CoreLogin.xcodeproj */,
 				98BDC5FD24EC596200CD33B4 /* Login.xcodeproj */,
-				9818627724F731E000B66962 /* Core.xcodeproj */,
+				980E3EBD24FDD55200752731 /* Core.xcodeproj */,
 				98E0248024EC5383009B9046 /* Super App */,
 				98E0249724EC5385009B9046 /* Super AppTests */,
 				98E024A224EC5385009B9046 /* Super AppUITests */,
@@ -375,12 +417,16 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 9818627824F731E000B66962 /* Products */;
-					ProjectRef = 9818627724F731E000B66962 /* Core.xcodeproj */;
+					ProductGroup = 980E3EBE24FDD55200752731 /* Products */;
+					ProjectRef = 980E3EBD24FDD55200752731 /* Core.xcodeproj */;
 				},
 				{
 					ProductGroup = 98D83AF824EC59F0004D9512 /* Products */;
 					ProjectRef = 98D83AF724EC59F0004D9512 /* CoreLogin.xcodeproj */;
+				},
+				{
+					ProductGroup = 98AAF73A24FD626A00822E42 /* Products */;
+					ProjectRef = 98AAF73924FD626A00822E42 /* ItauPass.xcodeproj */;
 				},
 				{
 					ProductGroup = 98BDC5FE24EC596200CD33B4 /* Products */;
@@ -397,18 +443,32 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		9818627D24F731E000B66962 /* Core.framework */ = {
+		980E3EC324FDD55200752731 /* Core.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Core.framework;
-			remoteRef = 9818627C24F731E000B66962 /* PBXContainerItemProxy */;
+			remoteRef = 980E3EC224FDD55200752731 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		9818627F24F731E000B66962 /* CoreTests.xctest */ = {
+		980E3EC524FDD55200752731 /* CoreTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = CoreTests.xctest;
-			remoteRef = 9818627E24F731E000B66962 /* PBXContainerItemProxy */;
+			remoteRef = 980E3EC424FDD55200752731 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		98AAF73F24FD626A00822E42 /* ItauPass.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ItauPass.framework;
+			remoteRef = 98AAF73E24FD626A00822E42 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		98AAF74124FD626A00822E42 /* ItauPassTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ItauPassTests.xctest;
+			remoteRef = 98AAF74024FD626A00822E42 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		98BDC60324EC596200CD33B4 /* Login.framework */ = {
@@ -472,6 +532,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98D83B1C24EC9741004D9512 /* LoginCoordinator.swift in Sources */,
+				98BC14FD24FD5550006BFCA6 /* ItauPassCoordinator.swift in Sources */,
 				98E0248224EC5383009B9046 /* AppDelegate.swift in Sources */,
 				981FABBB24F5A19B00D2DE82 /* LoginViewThemeImpl.swift in Sources */,
 				98D83B2224EDD6BC004D9512 /* RootContainerViewController.swift in Sources */,
@@ -487,6 +548,7 @@
 				98E0249924EC5385009B9046 /* Super_AppTests.swift in Sources */,
 				98D83B2324EDD6BC004D9512 /* RootContainerViewController.swift in Sources */,
 				98D83B1524EC7B24004D9512 /* AppCoodinator.swift in Sources */,
+				98BC14FE24FD5550006BFCA6 /* ItauPassCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +560,7 @@
 				98E024A424EC5385009B9046 /* Super_AppUITests.swift in Sources */,
 				98D83B2424EDD6BC004D9512 /* RootContainerViewController.swift in Sources */,
 				98D83B1624EC7B24004D9512 /* AppCoodinator.swift in Sources */,
+				98BC14FF24FD5550006BFCA6 /* ItauPassCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,7 +630,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -621,12 +684,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -646,7 +709,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AdolfoMontilla.Super-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -665,7 +728,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AdolfoMontilla.Super-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

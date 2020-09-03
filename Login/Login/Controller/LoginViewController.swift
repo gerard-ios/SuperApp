@@ -13,18 +13,13 @@ class LoginViewController: UIViewController
 {
     private let theme: LoginViewTheme
     private(set) var mainView: LoginView
+    let coordinator: LoginCoordinated?
     
-//    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
-//    {
-//        super.init(nibName: nil, bundle: nil)
-//
-//        //self.view.backgroundColor = .blue
-//    }
-    
-    init(withTheme theme: LoginViewTheme)
+    init(coordinator: LoginCoordinated?,
+         withTheme theme: LoginViewTheme)
     {
         self.theme = theme
-        
+        self.coordinator = coordinator
         self.mainView = LoginView(theme: theme)
         
         super.init(nibName: nil, bundle: nil)
@@ -56,6 +51,6 @@ extension LoginViewController: AuthenticateViewDelegate
 {
     func loginWithState()
     {
-        print("Click")
+        self.coordinator?.handle(event: .showItauPass)
     }
 }

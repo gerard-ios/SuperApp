@@ -8,8 +8,9 @@
 
 import Foundation
 import UIKit
-import Core
 import Login
+import Core
+import ItauPass
 
 protocol LoginCoordinatorDelegate: AnyObject
 {
@@ -19,7 +20,7 @@ protocol LoginCoordinatorDelegate: AnyObject
                           segmentTheme: String?)
 }
 
-final class LoginCoordinator
+final class LoginCoordinator: Listener<LoginEvent>
 {
     weak var rootViewController: UIViewController?
     
@@ -30,11 +31,29 @@ final class LoginCoordinator
     private let theme: LoginViewTheme
     
     
-    init(rootViewController: UIViewController,
+    
+    override func handle(event: LoginEvent)
+    {
+        switch event
+        {
+        case .itauPass:
+            
+            let itauPassCoordinator: ItauPassCoordinator?
+            
+            itauPassCoordinator = ItauPassCoordinator(rootViewController: self.rootViewController)
+            
+            itauPassCoordinator?.start()
+            
+        }
+    }
+    
+    init(rootViewController: UIViewController?,
          theme: LoginViewTheme)
     {
         self.rootViewController = rootViewController
         self.theme = theme
+        super.init()
+        EventBus.shared.add(listener: self)
     }
 }
 
