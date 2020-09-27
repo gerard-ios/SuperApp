@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8DD745E20827B4A3C1DFD80D /* Pods_ItauPassTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F082129D1357E51D79623F /* Pods_ItauPassTests.framework */; };
+		95365C5C1FB9E96F8F1C81B5 /* Pods_ItauPass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E7B1E5299E5D808234D320 /* Pods_ItauPass.framework */; };
 		9881F5B124FD6166008DAC65 /* ItauPass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9881F5A724FD6165008DAC65 /* ItauPass.framework */; };
 		9881F5B624FD6166008DAC65 /* ItauPassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881F5B524FD6166008DAC65 /* ItauPassTests.swift */; };
 		9881F5B824FD6166008DAC65 /* ItauPass.h in Headers */ = {isa = PBXBuildFile; fileRef = 9881F5AA24FD6165008DAC65 /* ItauPass.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -46,6 +48,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1C0DC2C953F9951BA858DE2E /* Pods-ItauPassTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItauPassTests.release.xcconfig"; path = "Target Support Files/Pods-ItauPassTests/Pods-ItauPassTests.release.xcconfig"; sourceTree = "<group>"; };
+		2B23C50515F83BC40807E3A2 /* Pods-ItauPassTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItauPassTests.debug.xcconfig"; path = "Target Support Files/Pods-ItauPassTests/Pods-ItauPassTests.debug.xcconfig"; sourceTree = "<group>"; };
+		38FC5D2880518467BB1972E6 /* Pods-ItauPass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItauPass.debug.xcconfig"; path = "Target Support Files/Pods-ItauPass/Pods-ItauPass.debug.xcconfig"; sourceTree = "<group>"; };
+		39ED8C310B4BDECF52A2B0F7 /* Pods-ItauPass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItauPass.release.xcconfig"; path = "Target Support Files/Pods-ItauPass/Pods-ItauPass.release.xcconfig"; sourceTree = "<group>"; };
+		87E7B1E5299E5D808234D320 /* Pods_ItauPass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ItauPass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97F082129D1357E51D79623F /* Pods_ItauPassTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ItauPassTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9881F5A724FD6165008DAC65 /* ItauPass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ItauPass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9881F5AA24FD6165008DAC65 /* ItauPass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItauPass.h; sourceTree = "<group>"; };
 		9881F5AB24FD6165008DAC65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,6 +75,7 @@
 			files = (
 				98945F78250065AF009CB2C8 /* Login.framework in Frameworks */,
 				98945F6924FFD8AF009CB2C8 /* Core.framework in Frameworks */,
+				95365C5C1FB9E96F8F1C81B5 /* Pods_ItauPass.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +84,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9881F5B124FD6166008DAC65 /* ItauPass.framework in Frameworks */,
+				8DD745E20827B4A3C1DFD80D /* Pods_ItauPassTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +98,7 @@
 				9881F5B424FD6166008DAC65 /* ItauPassTests */,
 				9881F5A824FD6165008DAC65 /* Products */,
 				98945F6724FFD8AE009CB2C8 /* Frameworks */,
+				D805F4B7EA23E123B1AB321F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +138,8 @@
 			children = (
 				98945F77250065AF009CB2C8 /* Login.framework */,
 				98945F6824FFD8AF009CB2C8 /* Core.framework */,
+				87E7B1E5299E5D808234D320 /* Pods_ItauPass.framework */,
+				97F082129D1357E51D79623F /* Pods_ItauPassTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,6 +168,18 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		D805F4B7EA23E123B1AB321F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38FC5D2880518467BB1972E6 /* Pods-ItauPass.debug.xcconfig */,
+				39ED8C310B4BDECF52A2B0F7 /* Pods-ItauPass.release.xcconfig */,
+				2B23C50515F83BC40807E3A2 /* Pods-ItauPassTests.debug.xcconfig */,
+				1C0DC2C953F9951BA858DE2E /* Pods-ItauPassTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -173,6 +198,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9881F5BB24FD6166008DAC65 /* Build configuration list for PBXNativeTarget "ItauPass" */;
 			buildPhases = (
+				C77B64B49E40B79A797717A4 /* [CP] Check Pods Manifest.lock */,
 				9881F5A224FD6165008DAC65 /* Headers */,
 				9881F5A324FD6165008DAC65 /* Sources */,
 				9881F5A424FD6165008DAC65 /* Frameworks */,
@@ -192,9 +218,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9881F5BE24FD6166008DAC65 /* Build configuration list for PBXNativeTarget "ItauPassTests" */;
 			buildPhases = (
+				B9C65856C26DAFE0B8E41D07 /* [CP] Check Pods Manifest.lock */,
 				9881F5AC24FD6166008DAC65 /* Sources */,
 				9881F5AD24FD6166008DAC65 /* Frameworks */,
 				9881F5AE24FD6166008DAC65 /* Resources */,
+				01CA7B819A11929C10CC9F97 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -260,6 +288,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01CA7B819A11929C10CC9F97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ItauPassTests/Pods-ItauPassTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ItauPassTests/Pods-ItauPassTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ItauPassTests/Pods-ItauPassTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9C65856C26DAFE0B8E41D07 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ItauPassTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C77B64B49E40B79A797717A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ItauPass-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9881F5A324FD6165008DAC65 /* Sources */ = {
@@ -414,7 +506,9 @@
 		};
 		9881F5BC24FD6166008DAC65 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38FC5D2880518467BB1972E6 /* Pods-ItauPass.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -441,7 +535,9 @@
 		};
 		9881F5BD24FD6166008DAC65 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39ED8C310B4BDECF52A2B0F7 /* Pods-ItauPass.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -467,6 +563,7 @@
 		};
 		9881F5BF24FD6166008DAC65 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B23C50515F83BC40807E3A2 /* Pods-ItauPassTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -486,6 +583,7 @@
 		};
 		9881F5C024FD6166008DAC65 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C0DC2C953F9951BA858DE2E /* Pods-ItauPassTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
